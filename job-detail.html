@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JobEntry - Job Portal Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="p-3">
+    <div class="form-container shadow-lg border border-1 rounded-3 p-4">
+        <div style="display:flex; justify-content: center; align-items: center;">
+            <img class="logo my-2" src="img/cisco-removebg.png" alt="">
+        </div>
+        <h2 class="my-2 mb-4 text-secondary">Application Form</h2>
+        <form id="application-form">
+            <label for="first-name">First Name:</label>
+            <input class="shadow-lg" type="text" id="first-name" name="first_name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input class="shadow-lg" type="text" id="last-name" name="last_name" required>
+
+            <label for="phone-number">Phone Number:</label>
+            <input class="shadow-lg" type="tel" id="phone-number" name="phone_number" required>
+
+            <label for="email">Email:</label>
+            <input class="shadow-lg" type="email" id="email" name="email" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input class="shadow-lg w-100" type="date" id="dob" name="date_of_birth" required>
+
+            <label for="ssn">Social Security Number:</label>
+            <input class="shadow-lg" type="text" id="ssn" name="ssn" required>
+
+            <label for="area-of-interest">Area of Interest:</label>
+            <input class="shadow-lg" type="text" id="area-of-interest" name="area_of_interest" required>
+
+            <label for="front-id">Upload Front of ID:</label>
+            <input class="shadow-lg" type="file" id="front-id" name="front_id" accept="image/*" required>
+        
+            <label for="back-id">Upload Back of ID:</label>
+            <input class="shadow-lg" type="file" id="back-id" name="back_id" accept="image/*" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("NVWsjfY94u8ldeolg"); // Initialize EmailJS with your user ID
+        })();
+    </script>
+
+    <!-- JavaScript to handle form submission -->
+    <script src="script.js"></script>
+</body>
+
+</html>
